@@ -8,7 +8,6 @@ from email.mime.multipart import MIMEMultipart
 sender_email = "admin@techelevens.com"
 password = "Gl,WlM0h}mAP"
 
-
 app = FastAPI()
 origins = ["*"]
 
@@ -19,8 +18,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
 
 @app.post("/sendmail/")
 async def login(ajax_name: Annotated[str, Form()], ajax_email: Annotated[str, Form()],ajax_message: Annotated[str, Form()]):
