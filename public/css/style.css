@@ -356,7 +356,7 @@ h6 {
 
 .edrea_tm_header {
     position: fixed;
-    width: 900px;
+    width: 1200px;
     transform: translateX(-50%);
     left: 50%
 }
@@ -412,7 +412,7 @@ h6 {
 
 .edrea_tm_content {
     position: fixed;
-    width: 900px;
+    width: 1200px;
     top: 100px;
     bottom: 100px;
     left: 50%;
@@ -1446,7 +1446,7 @@ h6 {
 }
 
 .edrea_tm_portfolio .portfolio_list .list_inner {
-    width: 100%;
+    width: 75%;
     height: auto;
     clear: both;
     float: left;
@@ -2345,6 +2345,13 @@ h6 {
     top: -2px
 }
 
+@media(max-width:1200px) {
+    .edrea_tm_content {
+        top: 80px;
+        bottom: 80px;
+        width: 800px
+    }
+}
 @media(max-width:1400px) {
     body {
         font-size: 15px
@@ -2358,11 +2365,6 @@ h6 {
         padding-top: 30px
     }
 
-    .edrea_tm_content {
-        top: 80px;
-        bottom: 80px;
-        width: 800px
-    }
 
     .edrea_tm_home .name {
         font-size: 55px;
